@@ -3,12 +3,12 @@ package libraria;
 import java.util.ArrayList;
 
 public class Library {
-    private ArrayList<Book> books;
+    private ArrayList<Book> books = new ArrayList<>();
 
     public Library() {}
 
     public void addBook(Book book) throws InvalidBookException {
-        if (books == null) {
+        if (book == null) {
             throw new InvalidBookException("Book should not be null.");
         }
         books.add(book);
@@ -40,6 +40,8 @@ public class Library {
         if (book == null) {
             throw new EmptyLibraryException("Cannot return. Book with title " + title + " not found.");
         }
+        System.out.println("book was successfully returned.");
+        System.out.println(book.toString());
     }
 
     public void listBooks() throws EmptyLibraryException {
