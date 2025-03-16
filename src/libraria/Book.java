@@ -6,10 +6,10 @@ public class Book {
 
     public Book(String title, int pageCount) {
         if (title == null || title.equals("")) {
-            throw new IllegalArgumentException("Title cannot be empty");
+            throw new IllegalArgumentException("Title cannot be empty.");
         }
         if (pageCount < 1) {
-            throw new IllegalArgumentException("Page count must be positive");
+            throw new IllegalArgumentException("Page count must be positive.");
         }
         this.title = title;
         this.pageCount = pageCount;
