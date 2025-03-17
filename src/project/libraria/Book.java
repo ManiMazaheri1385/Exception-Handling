@@ -1,4 +1,4 @@
-package libraria;
+package project.libraria;
 
 public class Book {
     private String title;

@@ -1,5 +1,6 @@
-package libraria;
+package project.libraria;
 
+import project.exceptions.*;
 import java.util.ArrayList;
 
 public class Library {

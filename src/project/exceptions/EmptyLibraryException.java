@@ -1,4 +1,4 @@
-package libraria;
+package project.exceptions;
 
 public class EmptyLibraryException extends Exception {
     public EmptyLibraryException(String message) {
